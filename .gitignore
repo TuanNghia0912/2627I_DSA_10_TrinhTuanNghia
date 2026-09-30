@@ -1,48 +1,48 @@
 # ==========================================
-# 1. Java & Compiled Files (File biên dịch)
+# Princeton DSA - Standard .gitignore
 # ==========================================
+
+# --- Java Compiled Artifacts & Libraries ---
 *.class
 *.jar
 *.war
 *.ear
 
-# Ngoại lệ: Nếu có file txt/json dữ liệu nhỏ cần push thì không sao, 
-# nhưng bỏ qua các file nén dữ liệu test quá nặng
+# --- Build Directories ---
+bin/
+build/
+out/
+target/
+
+# --- Heavy Test Data & Datasets (Bỏ qua data nặng) ---
+algs4-data/
+data/
+*.txt
+*.csv
+*.png
+*.gif
+
+# --- Coursera & Princeton Specifics ---
 *.zip
 *.tar.gz
 *.rar
+.lift/
+.checkstyle
+.spotbugs
 
-# ==========================================
-# 2. IntelliJ IDEA
-# ==========================================
+# --- IDEs & Editors ---
 .idea/
 *.iml
 *.iws
 *.ipr
-out/
-gen/
-
-# ==========================================
-# 3. VS Code & Eclipse
-# ==========================================
-.vscode/
 .classpath
 .project
 .settings/
-bin/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
 
-# ==========================================
-# 4. OS Generated Files (File hệ điều hành)
-# ==========================================
-# macOS
+# --- OS Generated Files ---
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-
-# Windows
 Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-desktop.ini
