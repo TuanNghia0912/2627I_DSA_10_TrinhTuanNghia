@@ -1,10 +1,8 @@
-package Week3;
+package week3;
 
 import java.util.Scanner;
 
 import edu.princeton.cs.algs4.Stack;
-
-import edu.princeton.cs.algs4.StdOut;
 
 public class w3_tailop_25021913 {
 
